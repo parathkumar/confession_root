@@ -1,0 +1,14 @@
+{% extends 'registration/base.html' %}
+{% block title %} Login {% endblock %}
+
+{% block content %}
+<br>
+    <div class="container bg-light text-dark w30 p-4 " style="width:50%">
+
+        <h1 align="center"> Logout </h1>
+        <form method="post">
+            {% csrf_token %}
+            <center><button type="submit" class="btn btn-danger">Logout</button></center>
+        </form>
+    </div>
+{% endblock %}

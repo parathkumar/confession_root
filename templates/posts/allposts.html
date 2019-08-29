@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts</title>
+</head>
+<body>
+    {% if allposts %}
+        {% for post in allposts %}
+            <p>{{post.title}}</p>
+            <p>{{post.content}}</p>
+        {% endfor %}
+    {% else %}
+        <p>no posts</p>
+    {% endif %}
+</body>
+</html>
